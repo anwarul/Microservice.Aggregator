@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>net6.0</TargetFramework>
+	  <!--<TargetFramework>netcoreapp3.1</TargetFramework>-->
+    <RootNamespace>RS.MF.Aggregator.Infrastructure</RootNamespace>
+    <AssemblyName>RS.MF.Aggregator.Infrastructure</AssemblyName>
+    <Company>anwarul</Company>
+    <Authors>anwarul</Authors>
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="CommandHandlers\" />
+    <Folder Include="EventHandlers\" />
+    <Folder Include="DbContext\" />
+    <Folder Include="DbEngineRepositories\" />
+    <Folder Include="QueryHandlers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Application\Application.csproj" />
+  </ItemGroup>
+
+</Project>

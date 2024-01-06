@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+	  <TargetFramework>net6.0</TargetFramework>
+	  <!--<TargetFramework>netcoreapp3.1</TargetFramework>-->
+    <RootNamespace>RS.MF.Aggregator.CommandWebService</RootNamespace>
+    <AssemblyName>RS.MF.Aggregator.CommandWebService</AssemblyName>
+    <Company>anwarul</Company>
+    <Authors>anwarul</Authors>
+    <LangVersion>10</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <!--<DocumentationFile>D:\Project Volt\Personal\RedlimeSolutions_MicroService\RedlimeSolutions.Microservice.Structure\src\RS.MF.ServiceName.Api\RS.MF.Aggregator.CommandWebService.xml</DocumentationFile>-->
+    <DocumentationFile>D:\Project Volt\RedlimeSolutions.Microservice.Aggregator\src\Api\RS.MF.Aggregator.CommandWebService.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RS.MFramework.MeiliSearchClientHelper" Version="23.11.3.5" />
+    <PackageReference Include="RS.Microservice.Framework.ApiDoc" Version="23.11.1.1" />
+    <PackageReference Include="RS.Microservice.Framework.ApiPipline" Version="23.11.1.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!--<ProjectReference Include="..\..\..\RedlimeSolutions.Microservice.Framework\scr\RedlimeSolutions.Microservice.Framework.ApiDoc\RS.MFramework.ApiDoc.csproj" />
+    <ProjectReference Include="..\..\..\RedlimeSolutions.Microservice.Framework\scr\RedlimeSolutions.Microservice.Framework.ApiPipline\RS.MFramework.ApiPipline.csproj" />-->
+    <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
+  </ItemGroup>
+
+
+</Project>

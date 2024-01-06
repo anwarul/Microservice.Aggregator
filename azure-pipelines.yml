@@ -1,0 +1,20 @@
+trigger:
+  - dev
+  - release
+  - main
+
+resources:
+  - repo: self
+
+variables:
+  - template: pipeline/variables.yml
+stages:
+  - stage: Build
+    displayName: Docker Image
+    jobs:
+      - template: /pipeline/branch-build-push-jobs.yml
+  - stage: Deploy
+    displayName: Deploy To Kubernetes
+    dependsOn: Build
+    jobs:
+      - template: /pipeline/deploy-image-k8s.yml

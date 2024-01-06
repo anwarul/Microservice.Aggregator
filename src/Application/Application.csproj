@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>net6.0</TargetFramework>
+	  <!--<TargetFramework>netcoreapp3.1</TargetFramework>-->
+    <RootNamespace>RS.MF.Aggregator.Application</RootNamespace>
+    <AssemblyName>RS.MF.Aggregator.Application</AssemblyName>
+    <Company>anwarul</Company>
+    <Authors>anwarul</Authors>
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Queries\" />
+  </ItemGroup>
+
+</Project>

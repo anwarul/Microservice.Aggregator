@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>net6.0</TargetFramework>
+	  <!--<TargetFramework>netcoreapp3.1</TargetFramework>-->
+    <RootNamespace>RS.MF.Aggregator.Core</RootNamespace>
+    <AssemblyName>RS.MF.Aggregator.Core</AssemblyName>
+    <Company>anwarul</Company>
+    <Authors>anwarul</Authors>
+    <LangVersion>10</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Events\" />
+    <Folder Include="Aggregate\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RS.Microservice.Framework.Entity" Version="23.11.24.4" />
+    <PackageReference Include="RS.Microservice.Framework" Version="23.11.1.1" />
+    <PackageReference Include="RS.Microservice.Framework.CacheClient" Version="23.11.1.1" />
+    <PackageReference Include="RS.Microservice.Framework.Core" Version="23.11.3.6" />
+    <PackageReference Include="RS.Microservice.Framework.Logger" Version="23.11.1.1" />
+    <PackageReference Include="RS.Microservice.Framework.GRepositories" Version="23.11.3.6" />
+    <PackageReference Include="RS.Microservice.Framework.ServiceClient" Version="23.11.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!--<ProjectReference Include="..\..\..\RedlimeSolutions.Microservice.Framework\scr\RedlimeSolutions.Microservice.Framework.CacheClient\RS.MFramework.CacheClient.csproj" />
+    <ProjectReference Include="..\..\..\RedlimeSolutions.Microservice.Framework\scr\RedlimeSolutions.Microservice.Framework.Core\RS.MFramework.Core.csproj" />
+    <ProjectReference Include="..\..\..\RedlimeSolutions.Microservice.Framework\scr\RedlimeSolutions.Microservice.Framework.GRepositories\RS.MFramework.GRepositories.csproj" />
+    <ProjectReference Include="..\..\..\RedlimeSolutions.Microservice.Framework\scr\RedlimeSolutions.Microservice.Framework.Logger\RS.MFramework.Logger.csproj" />
+    <ProjectReference Include="..\..\..\RedlimeSolutions.Microservice.Framework\scr\RedlimeSolutions.Microservice.Framework.ServiceClient\RS.MFramework.ServiceClient.csproj" />
+    <ProjectReference Include="..\..\..\RedlimeSolutions.Microservice.Framework\scr\RedlimeSolutions.Microservice.Framework.Tenants\RS.MFramework.Tenants.csproj" />
+    <ProjectReference Include="..\..\..\RedlimeSolutions.Microservice.Framework\scr\RedlimeSolutions.Microservice.Framework\RS.M.Framework.csproj" />-->
+  </ItemGroup>
+
+</Project>
